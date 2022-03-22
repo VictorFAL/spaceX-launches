@@ -1,0 +1,38 @@
+<div>
+    <div style="height: 100px; border: 1px solid black; display: flex; flex-direction: row; width: 90%; margin-top: 20px; justify-content: space-between;">
+
+        <div style="display: flex; flex-direction: row;">
+          <div style="width: 120px; text-align: center;">
+            <span style="font-size: 15px; font-weight: bold;">{{launch?.missionName}}</span>
+          </div>
+      
+          <div style="margin-left: 15px;
+              align-self: center;
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+              height: 100%;">
+      
+            <div style="margin-top: 10px;">
+              <span style="font-size: 15px; font-weight: bold;">{{launch?.dateLocal}}</span><br>
+              <span style="font-size: 10px;">{{launch?.siteName}}</span>
+            </div>
+      
+            <div style="margin-bottom: 10px; display: flex; flex-direction: row;">
+              <span style="font-size: 10px;">{{launch?.details}}</span>
+            </div>
+      
+          </div>
+        </div>
+      
+        <div style="width: 50px;
+          font-size: 30px;
+          text-align: center;
+          align-self: center;">
+
+          <span>{{launch?.launchSuccess}}</span>
+
+        </div>
+      
+      </div>
+</div>
