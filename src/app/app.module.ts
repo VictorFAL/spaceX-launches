@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LaunchComponent } from './launch/launch.component';
 import { LaunchViewComponent } from './launch-view/launch-view.component';
+import { LaunchService } from './service/launch.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,13 @@ import { LaunchViewComponent } from './launch-view/launch-view.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    HttpClient,
+    LaunchService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
